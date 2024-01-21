@@ -1,3 +1,23 @@
-:host {
-  display: block;
+div {
+  margin: 5px;
+  padding: 8px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.sent {
+  background-color: #358f3d;
+  color: white;
+  text-align: right;
+  width: 30vw;
+  overflow-wrap: break-word;
+  left: 10rem;
+}
+
+.received {
+  background-color: #7fb7f6;
+  color: black;
+  text-align: left;
+  width: 30vw;
+  overflow-wrap: break-word;
 }

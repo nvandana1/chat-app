@@ -11,11 +11,10 @@ app.use(cors()); // Enable CORS for all routes
 
 io.on('connection', (socket) => {
   console.log('User connected');
-
   // Listen for messages from clients
   socket.on('message', (message) => {
     // Broadcast the message to all connected clients
-    io.emit('message', message);
+    socket.broadcast.emit('message',message);
   });
 
   // Handle disconnection

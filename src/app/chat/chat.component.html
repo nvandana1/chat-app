@@ -1,5 +1,5 @@
-<div *ngFor="let message of messages">
-  {{ message }}
+<div *ngFor="let message of messages" [ngClass]="message.isSent?'sent':'received'">
+  {{ message.msg }}
 </div>
 
 <input [(ngModel)]="messageInput" placeholder="Type your message..." />
