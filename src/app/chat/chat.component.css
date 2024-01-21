@@ -5,6 +5,11 @@ div {
   border-radius: 8px;
 }
 
+.chat-container {
+  height: 85vh;
+  overflow: auto;
+}
+
 .sent {
   background-color: #358f3d;
   color: white;
