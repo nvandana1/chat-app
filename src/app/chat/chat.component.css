@@ -5,24 +5,31 @@ div {
   border-radius: 8px;
 }
 
-.chat-container {
-  height: 85vh;
+.chat-app{
+  display: grid;
+  grid-template-columns: 50%;
+/* flex-direction: column; */
+  justify-content: center;
+}
+
+.chat-container{
+  height: calc(100vh - 11rem);
   overflow: auto;
 }
 
-.sent {
+.sent{
   background-color: #358f3d;
   color: white;
-  text-align: right;
-  width: 30vw;
+   text-align: right;
+   width: 30vw;
   overflow-wrap: break-word;
-  left: 10rem;
+   left: 8rem;
 }
 
 .received {
   background-color: #7fb7f6;
   color: black;
-  text-align: left;
-  width: 30vw;
+   text-align: left;
+   width: 30vw;
   overflow-wrap: break-word;
 }

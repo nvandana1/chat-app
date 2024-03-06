@@ -1,7 +1,12 @@
-<div class="chat-container">
-  <div *ngFor="let message of messages" [ngClass]="message.isSent?'sent':'received'">
-    {{ message.msg }}
+<div class="chat-app">
+  <h1>Chat App</h1>
+  <div class="chat-container">
+    <div *ngFor="let message of messages" [ngClass]="message.isSent?'sent':'received'">
+      {{ message.msg }}
+    </div>
+  </div>
+  <div>
+    <input type="text" pInputText [(ngModel)]="messageInput" />
+    <p-button icon="pi pi-send" label="Send" (onClick)="sendMessage()"></p-button>
   </div>
 </div>
-<input type="text" pInputText [(ngModel)]="messageInput" />
-<p-button icon="pi pi-send" label="Send" (onClick)="sendMessage()"></p-button>
